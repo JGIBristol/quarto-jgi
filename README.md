@@ -57,4 +57,4 @@ quarto render document.qmd --to uob-jgi-html
 
 The source code in this repository is licensed under the MIT License.
 
-The Universtiy of Bristol logo is copyright the University of Bristol, all rights reserved. You may only use this if you are allowed to do so as a member of the university.
+The University of Bristol logo is copyright the University of Bristol, all rights reserved. You may only use this if you are allowed to do so as a member of the university.
