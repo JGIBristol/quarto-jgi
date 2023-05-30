@@ -1,0 +1,19 @@
+/*-- scss:defaults --*/
+
+/* TODO: Customize html appearance by setting SCSS variables */
+/* See https://quarto.org/docs/output-formats/html-themes.html#theme-options */
+
+$primary: #B01C2E;
+$link-color: #002F5F;
+$headings-color: #B01C2E;
+$toc-active-border: #B01C2E;
+
+/*-- scss:rules --*/
+
+h1.title {
+    text-transform: uppercase;
+}
+
+.header-section-number {
+    color: $headings-color;
+}

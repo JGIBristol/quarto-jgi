@@ -1,0 +1,29 @@
+---
+title: Untitled
+author: Your name
+date: last-modified
+abstract: |
+  This is the abstract
+
+  With multiple paragraphs
+format:
+  uob-jgi-docx: default
+  uob-jgi-html: default
+---
+
+## Introduction
+
+This is an example [Link to next section](#sec-further)
+
+This is an example
+
+## Further titles {#sec-further}
+
+This is an example
+
+This is an example
+
+::: {.callout-note}
+Note that there are five types of callouts, including:
+`note`, `tip`, `warning`, `caution`, and `important`.
+:::
