@@ -8,6 +8,7 @@ contributes:
       reference-doc: uob-jgi.docx
       number-sections: true
     html:
+      self-contained: true
       embed-resources: true
       toc: true
       number-sections: true
