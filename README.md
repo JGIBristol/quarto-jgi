@@ -5,7 +5,7 @@ Provides both `.html` and `.docx` export formats in the style of the [Jean Goldi
 ## Installing
 
 ```bash
-quarto use template jean-golding-institute/quarto-uob-jgi
+quarto use template jgibristol/quarto-uob-jgi
 ```
 
 This will install the extension and create an example qmd file that you can use as a starting place for your report.
