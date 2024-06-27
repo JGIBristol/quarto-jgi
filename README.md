@@ -1,18 +1,23 @@
 # Quarto template for the Jean Golding Institute
 
-Provides both `.html` and `.docx` export formats in the style of the [Jean Golding Institute](https://www.bristol.ac.uk/golding/).
+Provides:
+
+- Document templates for both `.html` and `.docx` files.
+- Presentations for both `.html` (via RevealJS) and `.pptx` files.
+
+in the style of the [Jean Golding Institute](https://www.bristol.ac.uk/golding/).
 
 ## Installing
 
 ```bash
-quarto use template jgibristol/quarto-uob-jgi
+quarto use template jgibristol/quarto-jgi
 ```
 
-This will install the extension and create an example qmd file that you can use as a starting place for your report.
+This will install the extension and create example `.qmd` files that you can use as a starting place for your report.
 
 ## Usage
 
-In the preamble of youe `.qmd` you can set:
+In the preamble of you `.qmd` you can set:
 
 ```
 ---
@@ -23,30 +28,26 @@ abstract: |
   This is the abstract
 
   With multiple paragraphs
-format: uob-jgi-html
+format: jgi-html
 ---
 ```
 
-or:
+where format can be one of the following:
 
 ```
----
-title: Untitled
-author: Your name
-date: last-modified
-abstract: |
-  This is the abstract
-
-  With multiple paragraphs
-format: uob-jgi-docx
----
+format: jgi-html
+format: jgi-docx
+format: jgi-revealjs
+format: jgi-pptx
 ```
 
 Alternatively you can compile your document with:
 
 ```bash
-quarto render document.qmd --to uob-jgi-docx
-quarto render document.qmd --to uob-jgi-html
+quarto render document.qmd --to jgi-html
+quarto render document.qmd --to jgi-docx
+quarto render document.qmd --to jgi-revealjs
+quarto render document.qmd --to jgi-pptx
 ```
 
 ## Contributors

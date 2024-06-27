@@ -1,0 +1,33 @@
+---
+title: Title
+subtitle: Subtitle
+author: Your name
+date: last-modified
+abstract: |
+  This is the abstract
+
+  With multiple paragraphs
+format:
+  jgi-revealjs: default
+  jgi-pptx: default
+---
+
+# Title slide
+
+# Another title slide
+
+## Introduction
+
+This is an example [Link to next section](#sec-further)
+
+This is an example
+
+## Further titles {#sec-further}
+
+This is an example
+
+This is an example
+
+## Two columns {.columns}
+
+...

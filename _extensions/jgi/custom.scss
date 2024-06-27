@@ -1,0 +1,33 @@
+/*-- scss:defaults --*/
+
+/* TODO: Customize html appearance by setting SCSS variables */
+/* See https://quarto.org/docs/output-formats/html-themes.html#theme-options */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+$font-family-sans-serif: "Inter", Helvetica, Arial, sans-serif !default;
+
+$primary: #A2166D;
+$link-color: #2E359D;
+$headings-color: #A2166D;
+$toc-active-border: #A2166D;
+$presentation-heading-color: #A2166D;
+
+/*-- scss:rules --*/
+
+.header-section-number {
+    /*color: $headings-color;*/
+}
+
+.reveal .slide-logo {
+    max-height: 6rem !important;
+}
+
+.quarto-title {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+
+    .quarto-title-inner *:last-child {
+        margin-bottom: 0;
+    }
+}

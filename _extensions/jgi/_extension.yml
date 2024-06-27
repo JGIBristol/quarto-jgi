@@ -1,0 +1,24 @@
+title: University of Bristol, Jean Golding Institute
+author: James Thomas
+version: 1.1.0
+quarto-required: ">=1.5.0"
+contributes:
+  formats:
+    html:
+      embed-resources: true
+      toc: true
+      number-sections: true
+      format-links: false
+      theme: [yeti, custom.scss]
+      template-partials: [title-block.html]
+      title-block-banner: "#772059"
+      title-block-banner-color: "#fff"
+    docx:
+      reference-doc: reference-doc.docx
+      number-sections: true
+    revealjs:
+      embed-resources: true
+      theme: [default, custom.scss]
+      logo: logo.png
+    pptx:
+      reference-doc: reference-doc.pptx

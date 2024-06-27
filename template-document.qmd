@@ -8,8 +8,8 @@ abstract: |
 
   With multiple paragraphs
 format:
-  uob-jgi-docx: default
-  uob-jgi-html: default
+  jgi-docx: default
+  jgi-html: default
 ---
 
 ## Introduction
