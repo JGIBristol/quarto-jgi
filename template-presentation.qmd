@@ -1,33 +1,92 @@
 ---
 title: Title
-subtitle: Subtitle
 author: Your name
 date: last-modified
-abstract: |
-  This is the abstract
-
-  With multiple paragraphs
-format:
-  jgi-revealjs: default
-  jgi-pptx: default
+format: jgi-pptx
+bibliography: references.bib
 ---
 
-# Title slide
+```{python}
+#| include: false
 
-# Another title slide
+# This code and output are hidden from the rendered document. Alternative the
+# code alone can be hidden with echo: false, and the output alone with
+# output: false. 
+
+import pandas as pd
+import seaborn as sns
+
+sns.set_theme(style="whitegrid")
+iris = sns.load_dataset("iris")
+```
 
 ## Introduction
 
-This is an example [Link to next section](#sec-further)
+- We set up variables:
 
-This is an example
+  ```{python}
+  #| echo: true
 
-## Further titles {#sec-further}
+  a = 1
+  b = a + 1
+  ```
 
-This is an example
+- In this example: a = `{python} a` and b = `{python} b`, or if you want to use math text: $a = `{python} a`$ and $b = `{python} b`$.
 
-This is an example
+- Math text can also be used for full equations:
 
-## Two columns {.columns}
+  $$
+  E = mc^2
+  $$
 
-...
+# Working with iris
+
+## About the dataset
+
+We will now use the `iris` dataset:
+
+```{python}
+iris.head()
+```
+
+## Scatter plot
+
+The full dataset is plotted here:
+
+```{python}
+iris.plot.scatter(x="sepal_length", y="sepal_width")
+```
+
+## Distributions
+
+:::: {.columns}
+
+::: {.column}
+
+```{python}
+#| fig-cap: sepal length
+
+iris.hist("sepal_length", bins=20, figsize=(5, 3));
+```
+
+:::
+
+::: {.column}
+
+```{python}
+#| fig-cap: sepal width
+
+iris.hist("sepal_width", bins=20, figsize=(5, 3));
+```
+
+:::
+
+::::
+
+## Final slide
+
+We have some references [@datahazards2024].
+
+And the JGI logo:
+
+![](logo.png){fig-alt="The JGI logo."}

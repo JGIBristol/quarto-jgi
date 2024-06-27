@@ -7,24 +7,120 @@ abstract: |
   This is the abstract
 
   With multiple paragraphs
-format:
-  jgi-docx: default
-  jgi-html: default
+format: jgi-docx
+code-fold: true
+bibliography: references.bib
 ---
+
+```{r}
+#| include: false
+
+# This code and output are hidden from the rendered document. Alternative the
+# code alone can be hidden with echo: false, and the output alone with
+# output: false. 
+
+library(tidyverse)
+library(knitr)
+theme_set(theme_light())
+```
 
 ## Introduction
 
-This is an example [Link to next section](#sec-further)
+We set up variables in @lst-example-code.
 
-This is an example
+```{r}
+#| lst-label: lst-example-code
+#| lst-cap: This the the caption for this code listing.
 
-## Further titles {#sec-further}
+a = 1
+b = a + 1
+```
 
-This is an example
+In this example: a = `{r} a` and b = `{r} b`, or if you want to use math text: $a = `{r} a`$ and $b = `{r} b`$.
 
-This is an example
+Math text can also be used for full equations:
+
+$$
+E = mc^2
+$$
+
+When you have finished reading this section, you can move onto the [next section](#sec-further), which is called @sec-further.
 
 ::: {.callout-note}
-Note that there are five types of callouts, including:
-`note`, `tip`, `warning`, `caution`, and `important`.
+This is a callout.
+
+There are five types: `note`, `tip`, `warning`, `caution`, and `important`.
 :::
+
+## Further section {#sec-further}
+
+We will now[^example_footnote] use the `iris` dataset^[This is an inline footnote.], a sample of which is shown in @tbl-example-table.
+
+[^example_footnote]: This is a longer footnote.
+
+    That can span over multiple paragraphs.
+
+```{r}
+#| label: tbl-example-table
+#| tbl-cap: This is the first few rows of the `iris` dataset.
+#| echo: false
+
+iris |>
+  head() |>
+  kable()
+```
+
+The full dataset is plotted in @fig-example-graph, with distributions shown in @fig-example-histograms (which includes subplots @fig-example-histogram-length and @fig-example-histogram-width).
+
+```{r}
+#| label: fig-example-graph
+#| fig-cap: This is an example using the `iris` dataset.
+
+iris |>
+  ggplot(aes(x = Sepal.Length, y = Sepal.Width)) +
+  geom_point()
+```
+
+[For example purposes we use Quarto subfigures here, although this would be better as facets/small multiple plots.]{.aside}
+
+::: {#fig-example-histograms layout-ncol=2}
+
+```{r}
+#| label: fig-example-histogram-length
+#| fig-cap: sepal length
+#| fig-width: 4
+#| fig-asp: 0.75
+
+iris |>
+  ggplot(aes(x = Sepal.Length)) +
+  geom_histogram(binwidth = 0.2)
+```
+
+```{r}
+#| label: fig-example-histogram-width
+#| fig-cap: sepal width
+#| fig-width: 4
+#| fig-asp: 0.75
+
+iris |>
+  ggplot(aes(x = Sepal.Width)) +
+  geom_histogram(binwidth = 0.2)
+```
+
+This is the distribution of the variables.
+
+:::
+
+## Final section
+
+We have some references [@datahazards2024].
+
+## Acknowledgments {.appendix}
+
+These are the acknowledgements, a link to the [Jean Golding Institute](https://www.bristol.ac.uk/golding/) and its logo, with a caption but no figure numbering:
+
+![The JGI logo.](logo.png)
+
+And with figure numbering as @fig-example-image:
+
+![The JGI logo.](logo.png){#fig-example-image}
