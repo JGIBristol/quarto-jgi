@@ -7,9 +7,11 @@ abstract: |
   This is the abstract
 
   With multiple paragraphs
-format: jgi-docx
+format:
+  jgi-docx: default
+  jgi-html: default
 code-fold: true
-bibliography: references.bib
+bibliography: example_references.bib
 ---
 
 ```{r}
@@ -119,8 +121,8 @@ We have some references [@datahazards2024].
 
 These are the acknowledgements, a link to the [Jean Golding Institute](https://www.bristol.ac.uk/golding/) and its logo, with a caption but no figure numbering:
 
-![The JGI logo.](logo.png)
+![The JGI logo.](example_image.png)
 
 And with figure numbering as @fig-example-image:
 
-![The JGI logo.](logo.png){#fig-example-image}
+![The JGI logo.](example_image.png){#fig-example-image}

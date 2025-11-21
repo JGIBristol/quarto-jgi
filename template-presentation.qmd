@@ -2,8 +2,10 @@
 title: Title
 author: Your name
 date: last-modified
-format: jgi-pptx
-bibliography: references.bib
+format:
+  jgi-pptx: default
+  jgi-revealjs: default
+bibliography: example_references.bib
 ---
 
 ```{python}
@@ -89,4 +91,4 @@ We have some references [@datahazards2024].
 
 And the JGI logo:
 
-![](logo.png){fig-alt="The JGI logo."}
+![](example_image.png){fig-alt="The JGI logo."}

@@ -9,13 +9,59 @@ in the style of the [Jean Golding Institute](https://www.bristol.ac.uk/golding/)
 
 ## Examples
 
-| `.html` document | `.docx` document |
-|------------------|------------------|
-| ![Screenshot of HTML document generated with the template](.examples/document.html.png) | ![Screenshot of DOCX document generated with the template](.examples/document.docx.png) |
+<table>
+    <tr>
+        <th>
+            <a href="https://jgibristol.github.io/quarto-jgi/document.html">
+                <code>.html</code> document
+            </a>
+        </th>
+        <th>
+            <a href="https://jgibristol.github.io/quarto-jgi/document.docx">
+                <code>.docx</code> document
+            </a>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://jgibristol.github.io/quarto-jgi/document.html">
+                <img src="https://jgibristol.github.io/quarto-jgi/document.html.png" alt="Screenshot of HTML document generated with the template">
+            </a>
+        </td>
+        <td>
+            <a href="https://jgibristol.github.io/quarto-jgi/document.docx">
+                <img src="https://jgibristol.github.io/quarto-jgi/document.docx.png" alt="Screenshot of DOCX document generated with the template">
+            </a>
+        </td>
+    </tr>
+</table>
 
-| `.html` presentation | `.pptx` presentation |
-|----------------------|----------------------|
-| ![Screenshot of HTML presentation generated with the template](.examples/presentation.html.png) | ![Screenshot of PPTX presentation generated with the template](.examples/presentation.pptx.png) |
+<table>
+    <tr>
+        <th>
+            <a href="https://jgibristol.github.io/quarto-jgi/presentation.html">
+                <code>.html</code> presentation
+            </a>
+        </th>
+        <th>
+            <a href="https://jgibristol.github.io/quarto-jgi/presentation.pptx">
+                <code>.pptx</code> presentation
+            </a>
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://jgibristol.github.io/quarto-jgi/presentation.html">
+                <img src="https://jgibristol.github.io/quarto-jgi/presentation.html.png" alt="Screenshot of HTML presentation generated with the template">
+            </a>
+        </td>
+        <td>
+            <a href="https://jgibristol.github.io/quarto-jgi/presentation.pptx">
+                <img src="https://jgibristol.github.io/quarto-jgi/presentation.pptx.png" alt="Screenshot of PPTX presentation generated with the template">
+            </a>
+        </td>
+    </tr>
+</table>
 
 ## Install
 
