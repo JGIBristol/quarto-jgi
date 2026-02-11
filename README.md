@@ -31,7 +31,7 @@ in the style of the [Jean Golding Institute](https://www.bristol.ac.uk/golding/)
             </a>
         </td>
         <td>
-            <a href="https://jgibristol.github.io/quarto-jgi/document.docx">
+            <a href="https://view.officeapps.live.com/op/view.aspx?src=https://jgibristol.github.io/quarto-jgi/document.docx">
                 <img src="https://jgibristol.github.io/quarto-jgi/document.docx.png" alt="Screenshot of DOCX document generated with the template">
             </a>
         </td>
