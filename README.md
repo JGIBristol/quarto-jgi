@@ -17,9 +17,11 @@ in the style of the [Jean Golding Institute](https://www.bristol.ac.uk/golding/)
             </a>
         </th>
         <th>
-            <a href="https://jgibristol.github.io/quarto-jgi/document.docx">
+            <a href="https://view.officeapps.live.com/op/view.aspx?src=https://jgibristol.github.io/quarto-jgi/document.docx">
                 <code>.docx</code> document
             </a>
+            <br>
+            (<a href="https://jgibristol.github.io/quarto-jgi/document.docx">download instead</a>)
         </th>
     </tr>
     <tr>
@@ -44,9 +46,11 @@ in the style of the [Jean Golding Institute](https://www.bristol.ac.uk/golding/)
             </a>
         </th>
         <th>
-            <a href="https://jgibristol.github.io/quarto-jgi/presentation.pptx">
+            <a href="https://view.officeapps.live.com/op/view.aspx?src=https://jgibristol.github.io/quarto-jgi/presentation.pptx">
                 <code>.pptx</code> presentation
             </a>
+            <br>
+            (<a href="https://jgibristol.github.io/quarto-jgi/presentation.pptx">download instead</a>)
         </th>
     </tr>
     <tr>
@@ -56,7 +60,7 @@ in the style of the [Jean Golding Institute](https://www.bristol.ac.uk/golding/)
             </a>
         </td>
         <td>
-            <a href="https://jgibristol.github.io/quarto-jgi/presentation.pptx">
+            <a href="https://view.officeapps.live.com/op/view.aspx?src=https://jgibristol.github.io/quarto-jgi/presentation.pptx">
                 <img src="https://jgibristol.github.io/quarto-jgi/presentation.pptx.png" alt="Screenshot of PPTX presentation generated with the template">
             </a>
         </td>
